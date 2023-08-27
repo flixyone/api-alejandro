@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "titulo";
+    src: url("../../fuentes/PlayfairDisplaySC-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Pokemon', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #333333;
+    margin: 0;
+    background-image: url('../../img/sin_Login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Contenedor principal */
+#contenedor_general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor de login */
+#contenedor_login {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 60px;
+    padding: 50px 30px;
+    background-color: rgba(0, 0, 0, );
+    border: 2px solid #fff;
+    box-shadow: 4px 8px 8px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/* Título */
+.titulo {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    border-radius: 60px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    color: aliceblue;
+    font-family: "titulo";
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #3B4A82,
+        0 0 10px #3B4A82,
+        0 0 40px #3B4A82,
+        0 0 40px #3B4A82
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgb(218, 216, 216);
+}
+
+/* Botón */
+button[type="submit"] {
+    font-size: 1rem;
+    background-color: #ffcc00;
+    color: #333333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.6s, color 0.5s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    text-shadow: 1px 0px 5px #11225e;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    transition: all 1s;
+}
+
+/* Pie de formulario */
+.pie-form {
+    font-size: 0.8rem;
+    color: #666666;
+    margin-top: 20px;
+}
+
+/* Enlaces en el pie de formulario */
+.pie-form a {
+    display: block;
+    text-decoration: underline;
+    color: #a9a8a8;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.pie-form a:hover {
+    color: #ffffff;
+    transition: all 0.6s;
+}
+
+/* Animación de giro para Pokéball */
+#pokeball {
+    width: 50px;
+    height: auto;
+    animation: spin 3s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

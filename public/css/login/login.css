@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "titulo";
+    src: url("../../fuentes/PlayfairDisplaySC-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Pokemon", sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #333333;
+    margin: 0;
+    background-image: url("../../img/fondo_Api.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.alerta_succes {
+    display: block;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 10px;
+    width: 35%;
+    text-align: left;
+    letter-spacing: 2px;
+    color: #413f3f;
+    text-shadow: 0px 0px 4px white;
+    background-color: rgba(86, 213, 86, 0.7);
+    box-shadow: 8px 10px 8px rgba(63, 60, 60, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    animation: mensajeSucces linear 2s;
+}
+
+@keyframes mensajeSucces {
+    0% {
+        transform: translateY(-140%);
+    }
+}
+
+#mensaje_succes {
+    font-size: 18px;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    color: rgb(52, 50, 50);
+}
+
+.alerta_danger {
+    display: block;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 10px;
+    width: 35%;
+    text-align: left;
+    letter-spacing: 2px;
+    color: #413f3f;
+    text-shadow: 0px 0px 4px white;
+    background-color: rgba(180, 76, 76, 0.8);
+    box-shadow: 8px 10px 8px rgba(63, 60, 60, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    animation: mensajeDanger linear 2s;
+}
+
+@keyframes mensajeDanger {
+    0% {
+        transform: translateY(-140%);
+    }
+}
+
+#mensaje_danger {
+    font-size: 18px;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    color: rgb(52, 50, 50);
+}
+
+#contenedor_general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+#contenedor_login {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 60px;
+    padding: 50px 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #fff;
+    box-shadow: 12px 14px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 60px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "titulo";
+    font-size: 250%;
+    text-shadow: 0 0 5px #3b4a82, 0 0 10px #3b4a82, 0 0 40px #3b4a82, 0 0 40px #11225e;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    font-size: 1rem;
+    font-family: "titulo";
+    letter-spacing: 2px;
+    background-color: #ffcc00;
+    font-weight: 700;
+    color: #333333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.9s, color 0.7s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    text-shadow: 1px 0px 8px #11225e;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    transition: all 1s;
+}
+
+.pie-form {
+    font-size: 0.8rem;
+    color: #666666;
+    margin-top: 20px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: underline;
+    color: #333333;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.pie-form a:hover {
+    color: #ffffff;
+    text-shadow: 1px 0px 10px #11225e;
+    transition: all 0.6s;
+}
+
+#pokeball {
+    width: 50px;
+    height: auto;
+    animation: spin 3s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.mensaje_error{
+    text-align: left;
+    margin-left: 7px;
+    color: rgba(226, 0, 0, 0.95);
+}
